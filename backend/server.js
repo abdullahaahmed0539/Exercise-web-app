@@ -14,7 +14,7 @@ mongoose.connect(uri, {useNewUrlParser: true, useCreateIndex: true, useUnifiedTo
 //step 3: promise        
 const db = mongoose.connection;
 db.once('open', ()=> {
-    console.log("MongoDB database connection established successfully")
+    console.log("MongoDB database connection established successfully");
 });
 
 app.listen(port, ()=>{
